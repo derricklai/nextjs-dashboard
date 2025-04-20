@@ -11,6 +11,7 @@ import {
 export default async function Page() {
   const revenue = await fetchRevenue();
   const latestInvoices = await fetchLatestInvoices();
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   const {
     totalPaidInvoices,
     totalPendingInvoices,
