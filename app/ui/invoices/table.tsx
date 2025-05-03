@@ -11,9 +11,9 @@ export default async function InvoicesTable({
   query: string;
   currentPage: number;
 }) {
-  await new Promise((resolve) => {
-    setTimeout(resolve, 2000);
-  });
+  // await new Promise((resolve) => {
+  //   setTimeout(resolve, 2000);
+  // });
   const invoices = await fetchFilteredInvoices(query, currentPage);
 
   return (

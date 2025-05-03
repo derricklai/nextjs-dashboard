@@ -15,9 +15,9 @@ const iconMap = {
 };
 
 export default async function CardWrapper() {
-  await new Promise((resolve) => {
-    setTimeout(resolve, 1000);
-  });
+  // await new Promise((resolve) => {
+  //   setTimeout(resolve, 1000);
+  // });
   const {
     numberOfInvoices,
     numberOfCustomers,
