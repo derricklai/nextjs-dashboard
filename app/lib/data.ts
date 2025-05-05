@@ -160,7 +160,9 @@ export async function fetchInvoiceById(id: string) {
       amount: invoice.amount / 100,
     }));
 
-    console.log(invoice);
+    if (invoice.length === 0) {
+      return null;
+    }
 
     return invoice[0];
   } catch (error) {
