@@ -40,7 +40,6 @@ export async function createInvoice(formData: FormData) {
   console.log(customerId, amount, status);
   console.log(typeof customerId, typeof amount, typeof status);
 
-  revalidatePath("/dashboard");
   revalidatePath("/dashboard/invoices");
   redirect("/dashboard/");
 }
@@ -64,7 +63,6 @@ export async function updateInvoice(id: string, formData: FormData) {
   } catch (error) {
     console.error(error);
   }
-  revalidatePath("/dashboard");
   revalidatePath("/dashboard/invoices");
   redirect("/dashboard/invoices");
 }
@@ -75,6 +73,5 @@ export async function deleteInvoice(id: string) {
   } catch (error) {
     console.error(error);
   }
-  revalidatePath("/dashboard");
   revalidatePath("/dashboard/invoices");
 }
