@@ -32,7 +32,6 @@ Demonstrates server-side and client-side data fetching with caching strategies.
 Parts of the UI stream in as data becomes available for faster perceived load times.
 - **Edge-Ready**  
 Code and structure optimized for deployment to edge runtimes (even though this is local).
---
 
 
 ### Test Login
